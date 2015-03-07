@@ -1,0 +1,132 @@
+fileFormatVersion: 2
+guid: 49c91ec6862b4b442b861244c9924020
+timeCreated: 1425770983
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: tommy_2_0
+    21300002: tommy_2_1
+    21300004: tommy_2_2
+    21300006: tommy_2_3
+    21300008: tommy_2_4
+    21300010: tommy_2_5
+    21300012: tommy_2_8
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 250
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: tommy_2_0
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 1354
+        width: 214
+        height: 74
+      alignment: 9
+      pivot: {x: .516548514, y: .372383744}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tommy_2_1
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 1153
+        width: 692
+        height: 202
+      alignment: 9
+      pivot: {x: .431593537, y: .0215496402}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tommy_2_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 930
+        width: 533
+        height: 319
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tommy_2_3
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 962
+        width: 116
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tommy_2_4
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 554
+        width: 399
+        height: 255
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tommy_2_5
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 599
+        width: 93
+        height: 151
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tommy_2_8
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 323
+        width: 41
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
