@@ -1,0 +1,132 @@
+fileFormatVersion: 2
+guid: 983282a8534cf354f8a9cea186d565ef
+timeCreated: 1425743502
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: prop_hat_tommy
+    21300002: hat_tommy
+    21300004: head_tommy
+    21300006: eye_tommy
+    21300008: arm_tommy
+    21300010: body_tommy
+    21300012: leg_tommy
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 250
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: prop_hat_tommy
+      rect:
+        serializedVersion: 2
+        x: 1986
+        y: 3928
+        width: 512
+        height: 179
+      alignment: 9
+      pivot: {x: .50778532, y: .377524614}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: hat_tommy
+      rect:
+        serializedVersion: 2
+        x: 1607
+        y: 3357
+        width: 1614
+        height: 457
+      alignment: 9
+      pivot: {x: .43467468, y: .0590841696}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: head_tommy
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 2416
+        width: 1328
+        height: 770
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: eye_tommy
+      rect:
+        serializedVersion: 2
+        x: 3154
+        y: 2568
+        width: 289
+        height: 336
+      alignment: 9
+      pivot: {x: .508107305, y: .402374983}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arm_tommy
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 1248
+        width: 234
+        height: 375
+      alignment: 9
+      pivot: {x: .0856096298, y: .962981105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: body_tommy
+      rect:
+        serializedVersion: 2
+        x: 1726
+        y: 1439
+        width: 995
+        height: 633
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: leg_tommy
+      rect:
+        serializedVersion: 2
+        x: 1381
+        y: 803
+        width: 105
+        height: 324
+      alignment: 9
+      pivot: {x: .204802588, y: .994613826}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
