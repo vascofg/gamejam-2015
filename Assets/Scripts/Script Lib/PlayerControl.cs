@@ -50,15 +50,13 @@ public class PlayerControl : MonoBehaviour
 	{
 		// The player is grounded if a linecast to the groundcheck position hits anything on the ground layer.
 		grounded = Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"));  
-		
-		#if UNITY_EDITOR
+
 		// If the jump button is pressed and the player is grounded then the player should jump.
 		if(Input.GetButtonDown("Jump") && grounded)
 			jump = true;
 		
 		if(Input.GetButtonDown("Fire1"))
 			attack = true;
-		#endif
 	}
 	
 	
@@ -71,6 +69,7 @@ public class PlayerControl : MonoBehaviour
 			
 			// The Speed animator parameter is set to the absolute value of the horizontal input.
 			anim.SetFloat("Speed", Mathf.Abs(speedX));
+			anim.SetBool("Grounded", grounded);
 			
 			// If the player is changing direction (h has a different sign to velocity.x) or hasn't reached maxSpeed yet...
 			if(speedX * GetComponent<Rigidbody2D>().velocity.x < maxSpeed)
