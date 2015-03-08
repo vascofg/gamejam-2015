@@ -1,9 +1,12 @@
 fileFormatVersion: 2
-guid: b966233eeb5dfe0448287b72a3f51870
-timeCreated: 1425824846
+guid: 927dd61d61c303e4ca82d23a997d2d7f
+timeCreated: 1425825378
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: candy_0
+    21300002: candy_1
+    21300004: candy_2
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,14 +33,14 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -48,7 +51,37 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: candy_0
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 967
+        width: 530
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: candy_1
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 971
+        width: 534
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: candy_2
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 247
+        width: 853
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 
