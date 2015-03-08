@@ -1,12 +1,11 @@
 fileFormatVersion: 2
-guid: e5adedbe9d803e3418a4d703ca431183
-timeCreated: 1425833507
+guid: d5c7f35db0fb84d44a8aee87060280a3
+timeCreated: 1425834888
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: candy_0
-    21300002: candy_1
-    21300004: candy_2
+    21300000: lifebar
+    21300002: glitchbar
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -52,33 +51,23 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: candy_0
+    - name: lifebar
       rect:
         serializedVersion: 2
-        x: 194
-        y: 967
-        width: 530
-        height: 253
+        x: 479
+        y: 891
+        width: 913
+        height: 155
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: candy_1
+    - name: glitchbar
       rect:
         serializedVersion: 2
-        x: 1004
-        y: 972
-        width: 535
-        height: 248
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: candy_2
-      rect:
-        serializedVersion: 2
-        x: 428
-        y: 247
-        width: 853
-        height: 477
+        x: 479
+        y: 533
+        width: 913
+        height: 155
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}

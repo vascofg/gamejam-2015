@@ -1,12 +1,11 @@
 fileFormatVersion: 2
-guid: e5adedbe9d803e3418a4d703ca431183
-timeCreated: 1425833507
+guid: 136ab7cc55fc53a4abab8314d5dc6f48
+timeCreated: 1425835800
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: candy_0
-    21300002: candy_1
-    21300004: candy_2
+    21300000: tommymorreu_1
+    21300002: tommymorreu_3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,7 +29,7 @@ TextureImporter:
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
-  maxTextureSize: 4096
+  maxTextureSize: 2048
   textureSettings:
     filterMode: -1
     aniso: 16
@@ -52,33 +51,23 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: candy_0
+    - name: tommymorreu_1
       rect:
         serializedVersion: 2
-        x: 194
-        y: 967
-        width: 530
-        height: 253
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: candy_1
-      rect:
-        serializedVersion: 2
-        x: 1004
-        y: 972
+        x: 255
+        y: 929
         width: 535
-        height: 248
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        height: 322
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: candy_2
+    - name: tommymorreu_3
       rect:
         serializedVersion: 2
-        x: 428
-        y: 247
-        width: 853
-        height: 477
+        x: 954
+        y: 960
+        width: 118
+        height: 136
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
