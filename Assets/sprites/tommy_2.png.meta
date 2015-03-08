@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 49c91ec6862b4b442b861244c9924020
-timeCreated: 1425776117
+timeCreated: 1425779210
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -113,8 +113,8 @@ TextureImporter:
         y: 599
         width: 93
         height: 151
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .0772541016, y: .981166005}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: tommy_2_8
       rect:
@@ -123,8 +123,8 @@ TextureImporter:
         y: 323
         width: 41
         height: 127
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .183982298, y: .987067521}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
