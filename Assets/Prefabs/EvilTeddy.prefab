@@ -405,6 +405,7 @@ MonoBehaviour:
   facingRight: 1
   moveForce: 365
   maxSpeed: 5
+  candy: {fileID: 5069452, guid: 004a9564a22ed5c4fa3317ce42692f3f, type: 2}
 --- !u!212 &21202638
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -10,6 +10,9 @@ public class PlayerControl : MonoBehaviour
 	[HideInInspector]
 	public bool canMove = true;
 	private bool dead = false;
+
+	[HideInInspector]
+	public bool sanityEnabled = false;
 	
 	public float moveForce = 365f;			// Amount of force added to move the player left and right.
 	public float maxSpeed = 5f;				// The fastest the player can travel in the x axis.
@@ -33,8 +36,8 @@ public class PlayerControl : MonoBehaviour
 	public bool hasHay = false;
 	private GameObject uiStick;
 	private GameObject uiStone;
+	private int sanity = 1000;
 	private GameObject uiHay;
-	
 	
 	void Awake()
 	{
@@ -46,8 +49,7 @@ public class PlayerControl : MonoBehaviour
 		uiHay = GameObject.Find("ui_hayHUD");
 		//weapon = GameObject.FindGameObjectWithTag ("Weapon");
 	}
-	
-	
+
 	void Update()
 	{
 		// The player is grounded if a linecast to the groundcheck position hits anything on the ground layer.
@@ -64,7 +66,16 @@ public class PlayerControl : MonoBehaviour
 	
 	void FixedUpdate ()
 	{
-		if (!dead) {	
+		if (!dead) {
+			if (sanityEnabled)
+				sanity -= 1;
+			if(sanity <=0)
+			{
+				sanity = 0;
+				GameObject.FindGameObjectWithTag("Mountain").GetComponent<Animator>().SetTrigger("frito");
+				GameObject.FindGameObjectWithTag("Terrain").GetComponent<Animator>().SetTrigger("frito");
+			}
+
 			// Cache the horizontal input.
 			float speedX = Input.GetAxis("Horizontal");
 			
@@ -189,9 +200,8 @@ public class PlayerControl : MonoBehaviour
 	
 	public void Die(){
 		dead = true;
-		//anim.SetTrigger("Die");
-		StartCoroutine("ReloadGame");
-		StartCoroutine ("DeathSound");
+		anim.SetTrigger("Die");
+		Destroy (gameObject, 0.2f);
 	}
 	
 	public void Jump(){
@@ -215,5 +225,11 @@ public class PlayerControl : MonoBehaviour
 		yield return new WaitForSeconds(2);
 		// ... and then reload the level.
 		Application.LoadLevel("LevelMobile");
+	}
+
+	public void gotCandy() {
+		sanity += 100;
+		if(sanity > 1000)
+			sanity = 1000;
 	}
 }

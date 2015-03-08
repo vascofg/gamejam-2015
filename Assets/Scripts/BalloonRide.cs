@@ -18,6 +18,7 @@ public class BalloonRide : MonoBehaviour {
 			rb.gravityScale = 0;
 			rb.velocity = Vector2.zero;
 			player.GetComponent<PlayerControl>().canMove = false;
+			Destroy(GameObject.FindGameObjectWithTag("Title"));
 		}
 	}
 
@@ -39,6 +40,7 @@ public class BalloonRide : MonoBehaviour {
 				GameObject.FindGameObjectWithTag("Terrain").GetComponent<Animator>().SetTrigger("frito");
 				Camera.main.GetComponent<UnityStandardAssets.ImageEffects.NoiseAndGrain>().enabled = true;
 				Camera.main.GetComponent<AudioSource>().enabled = true;
+				GameObject.FindGameObjectWithTag("Bar").GetComponent<Canvas>().enabled = true;
 				Destroy (gameObject,1.5f);
 			}
 		}

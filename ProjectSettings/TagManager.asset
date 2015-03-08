@@ -10,6 +10,8 @@ TagManager:
   - Waypoint
   - Mountain
   - Foreground
+  - Title
+  - Bar
   layers:
   - Default
   - TransparentFX

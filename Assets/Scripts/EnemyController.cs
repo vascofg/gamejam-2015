@@ -9,6 +9,7 @@ public class EnemyController : MonoBehaviour {
 	public float moveForce = 365f;			// Amount of force added to move the player left and right.
 	public float maxSpeed = 5f;				// The fastest the player can travel in the x axis.
 	private Animator anim;
+	public Rigidbody2D candy;
 
 	// Use this for initialization
 	void Start () {
@@ -18,32 +19,34 @@ public class EnemyController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		float moveDir = (player.position.x - gameObject.transform.position.x)>0?1:-1;
+		if (player != null) {
+			float moveDir = (player.position.x - gameObject.transform.position.x) > 0 ? 1 : -1;
 
-		// If the player is changing direction (h has a different sign to velocity.x) or hasn't reached maxSpeed yet...
-		if(moveDir * GetComponent<Rigidbody2D>().velocity.x < maxSpeed)
+			// If the player is changing direction (h has a different sign to velocity.x) or hasn't reached maxSpeed yet...
+			if (moveDir * GetComponent<Rigidbody2D> ().velocity.x < maxSpeed)
 			// ... add a force to the player.
-			GetComponent<Rigidbody2D>().AddForce(Vector2.right * moveDir * moveForce);
+				GetComponent<Rigidbody2D> ().AddForce (Vector2.right * moveDir * moveForce);
 
-		// If the player's horizontal velocity is greater than the maxSpeed...
-		if(Mathf.Abs(GetComponent<Rigidbody2D>().velocity.x) > maxSpeed)
+			// If the player's horizontal velocity is greater than the maxSpeed...
+			if (Mathf.Abs (GetComponent<Rigidbody2D> ().velocity.x) > maxSpeed)
 			// ... set the player's velocity to the maxSpeed in the x axis.
-			GetComponent<Rigidbody2D>().velocity = new Vector2(Mathf.Sign(GetComponent<Rigidbody2D>().velocity.x) * maxSpeed, GetComponent<Rigidbody2D>().velocity.y);
+				GetComponent<Rigidbody2D> ().velocity = new Vector2 (Mathf.Sign (GetComponent<Rigidbody2D> ().velocity.x) * maxSpeed, GetComponent<Rigidbody2D> ().velocity.y);
 
 
-		if(moveDir > 0 && !facingRight)
+			if (moveDir > 0 && !facingRight)
 			// ... flip the player.
-			Flip();
+				Flip ();
 		// Otherwise if the input is moving the player left and the player is facing right...
-		else if(moveDir < 0 && facingRight)
+		else if (moveDir < 0 && facingRight)
 			// ... flip the player.
-			Flip();
+				Flip ();
+		}
 	}
 
 	void OnCollisionEnter2D (Collision2D collision)
 	{
 		if (collision.collider.CompareTag ("Player")) {
-			collision.collider.gameObject.GetComponent<PlayerControl>().Hurt();
+			collision.collider.gameObject.GetComponent<PlayerControl>().Die ();
 		}
 	}
 
@@ -60,6 +63,7 @@ public class EnemyController : MonoBehaviour {
 	public void Kill()
 	{
 		anim.SetTrigger ("Dead");
+		Instantiate (candy, transform.position, transform.rotation);
 		foreach(Collider2D col in gameObject.GetComponents<Collider2D>())
 			Destroy (col);
 		gameObject.GetComponent<AudioSource> ().Play ();
