@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 49c91ec6862b4b442b861244c9924020
-timeCreated: 1425770983
+timeCreated: 1425776117
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -50,7 +50,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 250
+  spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
@@ -74,7 +74,7 @@ TextureImporter:
         width: 692
         height: 202
       alignment: 9
-      pivot: {x: .431593537, y: .0215496402}
+      pivot: {x: .405182421, y: .029089598}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: tommy_2_2
       rect:
@@ -94,7 +94,7 @@ TextureImporter:
         width: 116
         height: 133
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: tommy_2_4
       rect:
@@ -124,7 +124,7 @@ TextureImporter:
         width: 41
         height: 127
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
