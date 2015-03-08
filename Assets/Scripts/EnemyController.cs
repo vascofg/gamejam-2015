@@ -38,6 +38,13 @@ public class EnemyController : MonoBehaviour {
 			Flip();
 	}
 
+	void OnCollisionEnter2D (Collision2D collision)
+	{
+		if (collision.collider.CompareTag ("Player")) {
+			collision.collider.gameObject.GetComponent<PlayerControl>().Hurt();
+		}
+	}
+
 	void Flip ()
 	{
 		// Switch the way the player is labelled as facing.
@@ -46,5 +53,11 @@ public class EnemyController : MonoBehaviour {
 		Vector3 theScale = transform.localScale;
 		theScale.x *= -1;
 		transform.localScale = theScale;
+	}
+
+	public void Kill()
+	{
+		//anim trigger die
+		Destroy (gameObject);
 	}
 }
