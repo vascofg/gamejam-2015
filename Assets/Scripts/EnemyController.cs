@@ -8,10 +8,12 @@ public class EnemyController : MonoBehaviour {
 	private Transform player;
 	public float moveForce = 365f;			// Amount of force added to move the player left and right.
 	public float maxSpeed = 5f;				// The fastest the player can travel in the x axis.
+	private Animator anim;
 
 	// Use this for initialization
 	void Start () {
 		player = GameObject.FindGameObjectWithTag ("Player").transform;
+		anim = gameObject.GetComponentInChildren<Animator>();
 	}
 	
 	// Update is called once per frame
@@ -38,6 +40,13 @@ public class EnemyController : MonoBehaviour {
 			Flip();
 	}
 
+	void OnCollisionEnter2D (Collision2D collision)
+	{
+		if (collision.collider.CompareTag ("Player")) {
+			collision.collider.gameObject.GetComponent<PlayerControl>().Hurt();
+		}
+	}
+
 	void Flip ()
 	{
 		// Switch the way the player is labelled as facing.
@@ -46,5 +55,14 @@ public class EnemyController : MonoBehaviour {
 		Vector3 theScale = transform.localScale;
 		theScale.x *= -1;
 		transform.localScale = theScale;
+	}
+
+	public void Kill()
+	{
+		anim.SetTrigger ("Dead");
+		foreach(Collider2D col in gameObject.GetComponents<Collider2D>())
+			Destroy (col);
+		gameObject.GetComponent<AudioSource> ().Play ();
+		Destroy (gameObject, 3f);
 	}
 }
