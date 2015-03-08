@@ -4,7 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Balloon
+  - Terrain
   - Enemy
+  - Waypoint
   layers:
   - Default
   - TransparentFX

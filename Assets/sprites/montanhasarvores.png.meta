@@ -1,10 +1,9 @@
 fileFormatVersion: 2
-guid: c9cd5f79d99abaf4d8e7e7adb38c029c
-timeCreated: 1425830997
+guid: a7bb455fc53c4f247911dc83be30a724
+timeCreated: 1425828858
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: balao_final-05_0
+  fileIDToRecycleName: {}
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -31,14 +30,14 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: 16
+    aniso: -1
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -49,17 +48,7 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites:
-    - name: balao_final-05_0
-      rect:
-        serializedVersion: 2
-        x: 563
-        y: 154
-        width: 345
-        height: 966
-      alignment: 9
-      pivot: {x: .554639935, y: .160452858}
-      border: {x: 0, y: 0, z: 0, w: 0}
+    sprites: []
   spritePackingTag: 
   userData: 
   assetBundleName: 
