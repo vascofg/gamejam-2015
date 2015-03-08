@@ -24,13 +24,11 @@ public class Rocket : MonoBehaviour
 	
 	void OnTriggerEnter2D (Collider2D col) 
 	{
-		Debug.Log (col.tag);
 		// If it hits an enemy...
 		if(col.CompareTag("Enemy"))
 		{
 			// ... find the Enemy script and call the Hurt function.
 			col.gameObject.GetComponent<EnemyController>().Kill();
-
 			// Call the explosion instantiation.
 			OnExplode();
 		}

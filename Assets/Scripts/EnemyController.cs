@@ -8,10 +8,12 @@ public class EnemyController : MonoBehaviour {
 	private Transform player;
 	public float moveForce = 365f;			// Amount of force added to move the player left and right.
 	public float maxSpeed = 5f;				// The fastest the player can travel in the x axis.
+	private Animator anim;
 
 	// Use this for initialization
 	void Start () {
 		player = GameObject.FindGameObjectWithTag ("Player").transform;
+		anim = gameObject.GetComponentInChildren<Animator>();
 	}
 	
 	// Update is called once per frame
@@ -57,7 +59,10 @@ public class EnemyController : MonoBehaviour {
 
 	public void Kill()
 	{
-		//anim trigger die
-		Destroy (gameObject);
+		anim.SetTrigger ("Dead");
+		foreach(Collider2D col in gameObject.GetComponents<Collider2D>())
+			Destroy (col);
+		gameObject.GetComponent<AudioSource> ().Play ();
+		Destroy (gameObject, 3f);
 	}
 }

@@ -31,10 +31,20 @@ public class BalloonRide : MonoBehaviour {
 				i++;
 			}
 			if(i==waypoints.Length) {
+				moving = false;
 				player.GetComponent<Rigidbody2D>().gravityScale=1;
 				player.GetComponent<PlayerControl>().canMove = true;
-				Destroy (this.gameObject);
+				gameObject.GetComponent<Animator>().SetTrigger("pop");
+				Camera.main.GetComponent<UnityStandardAssets.ImageEffects.NoiseAndGrain>().enabled = true;
+				Camera.main.GetComponent<AudioSource>().enabled = true;
+				Destroy (gameObject,1.5f);
 			}
 		}
+	}
+
+	void OnDestroy()
+	{
+		Camera.main.GetComponent<UnityStandardAssets.ImageEffects.NoiseAndGrain>().enabled = false;
+		Camera.main.GetComponent<AudioSource> ().enabled = false;
 	}
 }
