@@ -35,6 +35,8 @@ public class BalloonRide : MonoBehaviour {
 				player.GetComponent<Rigidbody2D>().gravityScale=1;
 				player.GetComponent<PlayerControl>().canMove = true;
 				gameObject.GetComponent<Animator>().SetTrigger("pop");
+				GameObject.FindGameObjectWithTag("Mountain").GetComponent<Animator>().SetTrigger("frito");
+				GameObject.FindGameObjectWithTag("Terrain").GetComponent<Animator>().SetTrigger("frito");
 				Camera.main.GetComponent<UnityStandardAssets.ImageEffects.NoiseAndGrain>().enabled = true;
 				Camera.main.GetComponent<AudioSource>().enabled = true;
 				Destroy (gameObject,1.5f);

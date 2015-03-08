@@ -8,6 +8,8 @@ TagManager:
   - Terrain
   - Enemy
   - Waypoint
+  - Mountain
+  - Foreground
   layers:
   - Default
   - TransparentFX
